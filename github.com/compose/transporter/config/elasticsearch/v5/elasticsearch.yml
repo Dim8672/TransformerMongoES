@@ -1,0 +1,50 @@
+
+# bootstrap.ignore_system_bootstrap_checks: true
+
+discovery.zen.minimum_master_nodes: 1
+
+http.port: 9205
+
+network.host:
+- _local_
+- _site_
+
+network.publish_host: _local_
+
+
+# Enable scripting as described here: https://www.elastic.co/guide/en/elasticsearch/reference/master/modules-scripting.html
+script.inline: false
+script.stored: false
+script.file:   false
+
+##################################################
+#          Search Guard 5 configuration          
+#                                                
+#Host: localhost                                     
+#Generated: Tue Apr 18 13:50:47 UTC 2017                              
+#Git Hash: 1c6b5346ca701e9e3d132c97b740fa733a891aca                          
+#ES-Version: 5.3.0                         
+#SG-Version: 12                         
+#SGSSL-Version:                   
+#NettyNative-Version: 1.1.33.Fork25      
+#                                                
+#CA_PASS: f65701c6abe613d5771850fd1b2ea0235e0798ac
+#CL_ADM_PASS: 810ca6c30b37d54de65c
+#CL_DEMOUSER_PASS: d4fbd3bd07b886eea5e2
+##################################################
+searchguard.ssl.transport.enabled: true
+searchguard.ssl.transport.keystore_filepath: CN=localhost-keystore.jks
+searchguard.ssl.transport.keystore_password: fa5f481f1a5df359de86
+searchguard.ssl.transport.truststore_filepath: truststore.jks
+searchguard.ssl.transport.truststore_password: 1b2775b49b7905d36c76
+searchguard.ssl.transport.enforce_hostname_verification: false
+searchguard.ssl.http.enabled: true
+searchguard.ssl.http.keystore_filepath: CN=localhost-keystore.jks
+searchguard.ssl.http.keystore_password: fa5f481f1a5df359de86
+searchguard.ssl.http.truststore_filepath: truststore.jks
+searchguard.ssl.http.truststore_password: 1b2775b49b7905d36c76
+searchguard.kerberos.krb5_filepath: /Users/temp/kerberos_ldap_environment/krb5.conf
+searchguard.kerberos.acceptor_keytab_filepath: http_srv.keytab
+searchguard.audit.type: internal_elasticsearch
+searchguard.authcz.admin_dn:
+  - CN=sgadmin
