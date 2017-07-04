@@ -38,7 +38,7 @@ searchguard.ssl.transport.keystore_password: fa5f481f1a5df359de86
 searchguard.ssl.transport.truststore_filepath: truststore.jks
 searchguard.ssl.transport.truststore_password: 1b2775b49b7905d36c76
 searchguard.ssl.transport.enforce_hostname_verification: false
-searchguard.ssl.http.enabled: true
+searchguard.ssl.http.enabled: false
 searchguard.ssl.http.keystore_filepath: CN=localhost-keystore.jks
 searchguard.ssl.http.keystore_password: fa5f481f1a5df359de86
 searchguard.ssl.http.truststore_filepath: truststore.jks
