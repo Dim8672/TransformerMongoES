@@ -13,3 +13,9 @@ La configuration intervient dans le fichier pipeline.js. l'édition de 2 variabl
 
 1) mongoDBUri : le serveur MongoDb avec la database qui souhaite être copier (Exemple : mongodb://ipServerMongo/Database)
 2) elasticsearchUri = le serveur ElasticSearch avec l'index ou les données doivent être copiées (Exemple : http://user:mdp@ipServerElastic:9200/Index)
+
+le fichier transform.js permet de rajouter ou de supprimer des champs avant l'importation dans ElasticSearch (notamment la latitude / longitude de l'appareil dans ce cas). <br/>
+
+Afin d'exécuter le transporter, il faut ouvrir un invite de commande dans le dossier ou se trouvent le fichier pipeline.js et rentrer la commande <br>
+
+`transporter.exe run`
